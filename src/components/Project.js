@@ -1,20 +1,19 @@
 import React from 'react'
 import { Grid, Container, Row, Col, Button } from 'react-bootstrap';
-import ProjObj from './ProjObj';
 import Traview from '../images/projects/traview.PNG'
 import Azor from '../images/projects/azor.png'
 import Gig from '../images/projects/gig.png'
-import AOS from 'aos';
-import 'aos/dist/aos.css'
-import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'
+// import { useEffect } from 'react';
 
 const Project = () => {
 
-    useEffect(() => {
-        AOS.init({
-            duration:3000
-        });
-      },[])
+    // useEffect(() => {
+    //     AOS.init({
+    //         duration:3000
+    //     });
+    //   },[])
 
     const projects = [
         {
@@ -56,7 +55,7 @@ const Project = () => {
 
   return (
  
-        <Container id='projects' data-aos="fade-in" data-aos-duration="2000">
+        <Container id='projects'>
                 <h1 className='display-1 text-center'>Projects</h1>
                {projects.map(proj => 
                      (

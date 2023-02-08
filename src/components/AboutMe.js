@@ -6,16 +6,8 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import Clean from '../images/skills/clean.png';
 import Dynamic from '../images/skills/dynamic.png';
 import Responsive from '../images/skills/responsive.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
-import { useEffect } from 'react';
-const AboutMe = () => {
 
-  useEffect(() => {
-    AOS.init({
-        duration:3000
-    });
-  },[])
+const AboutMe = () => {
 
   const skills = [
     {
@@ -35,7 +27,7 @@ const AboutMe = () => {
   return (
 
    
-   <Container data-aos="fade-left"  data-aos-duration="2000">
+   <Container>
         <h1 className='display-1 text-center my-3' id='AboutMe'>About Me</h1>
         <Row>
         <Col>

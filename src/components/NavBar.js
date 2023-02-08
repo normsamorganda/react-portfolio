@@ -1,11 +1,12 @@
 import React from 'react'
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap'
 import '../App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'aos/dist/aos';
 
-import styled from 'styled-components';
 const NavBar = () => {
 
-    let size = ['lg'];
+    let size = ['md'];
   return (
    <nav>
     <div className='container-fluid'>
@@ -26,9 +27,9 @@ const NavBar = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1"  className='mx-3 hover-line'>Home</Nav.Link>
-                    <Nav.Link href="#projects"  className='mx-3 hover-line'>Projects</Nav.Link>
-                    <Nav.Link href="#AboutMe" className='mx-3 hover-line'>About Me</Nav.Link>
+                    <Nav.Link href="#App" active  className='mx-3 hover-line'>Home</Nav.Link>
+                    <Nav.Link href="#projects" active className='mx-3 hover-line'>Projects</Nav.Link>
+                    <Nav.Link href="#AboutMe" active className='mx-3 hover-line'>About Me</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

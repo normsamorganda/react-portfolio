@@ -6,19 +6,12 @@ import Project from './components/Project';
 import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 import { useEffect } from 'react';
-
+import { AOS } from 'aos';
 function App() {
 
-  useEffect(() => {
-    AOS.init({duration:1000});
-  },[])
-
-
   return (
-    <div className="App">
+    <div className="App" id="App">
       <div className='first-page'>
         <NavBar/>
         <div className='divider'>
