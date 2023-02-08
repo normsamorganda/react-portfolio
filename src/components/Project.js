@@ -24,7 +24,8 @@ const Project = () => {
         description:'A travel forum website that serves as an information hub for prospective travelers planning a getaway.',
         css:'#CSS',
         html:'#HTML',
-        bootstrap:'#BOOTSTRAP'
+        bootstrap:'#BOOTSTRAP',
+        github:'https://github.com/normsamorganda/normsamorganda.github.io'
     },
     {
         img:Azor,
@@ -37,7 +38,8 @@ const Project = () => {
         react:'#REACT',
         mongo:'#MongoDB',
         node:'#NodeJS',
-        express:'#Express'
+        express:'#Express',
+        github:'https://github.com/normsamorganda/azor'
     },
     {
         img:Gig,
@@ -47,7 +49,8 @@ const Project = () => {
         css:'#CSS',
         html:'#HTML',
         react:'#REACT',
-        mui:'#MaterialUI'
+        mui:'#MaterialUI',
+        github:'https://github.com/normsamorganda/gig-website'
     }
 ]
 
@@ -74,7 +77,7 @@ const Project = () => {
 
                             <div className='icons-proj'>
                             <Button variant='primary' href={proj.live} target='_blank'>View Live</Button>
-                            <a href="https://web.facebook.com/dongingots" target="_blank">
+                            <a href={proj.github} target="_blank">
                             <i class="bi bi-github alt-icon move-icon mx-3"></i>
                             </a>
                     </div>
