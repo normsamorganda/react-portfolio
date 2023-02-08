@@ -25,7 +25,7 @@ const Banner = () => {
                    <h1 class='display-1 text-center'>
                    <TypeIt options={{ strings: ["Hello, I'm Norman!"], speed:200, waitUntilVisible: true,}}/></h1>
                    <p class="lead text-center">
-                   I am a aspiring Frontend Developer,
+                   I'm an aspiring Jr Frontend Developer,
                     currently focused on building beautiful web interfaces and web applications.
                     </p>
                    
