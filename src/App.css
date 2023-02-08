@@ -83,7 +83,7 @@ footer p {
  text-align: center;
 }
 
-  @media (max-width:7992px) {
+  @media (max-width:992px) {
   
     .switch-1 {
       -webkit-box-ordinal-group: 1;

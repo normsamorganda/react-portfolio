@@ -4,14 +4,23 @@ import Norman from '../images/Norman'
 import '../App.css'
 import Image from 'react-bootstrap/Image'
 import TypeIt from "typeit-react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration:3000
+        });
+      },[])
 
   return (
 
         <Container>
             <Row>
-                <Col lg className="d-flex align-items-center switch-1" data-aos="fade-in">
+                <Col lg className="d-flex align-items-center switch-1" data-aos='fade-right'>
                 <div className='d-flex flex-column justify-content-center'>
                    <h1 class='display-1 text-center'>
                    <TypeIt options={{ strings: ["Hello, I'm Norman!"], speed:200, waitUntilVisible: true,}}/></h1>
@@ -31,11 +40,11 @@ const Banner = () => {
                     <Button variant='primary' target='_blank' href="https://drive.google.com/file/d/1f1NSSyvb8cx9d3pXLoLge_5-xtfh__Y_/view">
                         <span>Resume</span>
                         <i class="bi bi-sign-turn-right mx-1"></i>
-             </Button>
+                    </Button>
                     </div>
                 </div>
                 </Col>
-                <Col lg data-aos="fade-in">
+                <Col data-aos='flip-left' data-aos-duration="2000">
                 <div className="d-flex justify-content-center switch-1">
                     <Image src={Norman} roundedCircle fluid></Image>
                 </div>
